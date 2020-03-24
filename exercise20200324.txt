@@ -1,0 +1,149 @@
+# Exercise 2
+Ps C:\Karlavaldez\zed\> pwd
+karla/home 
+# Exercise 3 
+$ hostname
+LAPTOP-R7NRPSKT
+# Exercise 4
+$ mkdir temp
+$ cd temp
+$ mkdir stuff 
+$ cd stuff 
+$ mkdir things
+$ cd things
+$/home/karlavaldez/temp/stuff/things
+# Exercise 5
+`
+$ mkdir temp
+$ cd temp 
+$ pwd
+$ /home/karlavaldez/temp
+$ mkdir stuff
+$ cd stuff
+$ pwd
+$ /home/karlavaldez/temp/stuff
+$ mkdir things
+$ cd things
+$ pwd 
+$ /home/karlavaldez/temp/stuff/things 
+$ mkdir karla
+$ cd karla
+$ pwd
+$ /home/karlavaldez/temp/stuff/things/karla
+`
+# Exercise 6
+$ mkdir temp
+$ cd temp
+$ ls
+$ stuff
+$ cd stuff
+$ things
+$ cd things                           
+$ ls 
+$ karla
+
+# Exercise 7
+$ cd temp
+$ ls
+stuff
+$ cd stuff/things/karla/
+$ cd ..
+$ rmdir karla
+
+#Exercise 8 
+
+~/temp$ mkdir -p i/like/iccecream
+~/temp$ pushd -bash: pushd: no other directory
+~/temp$ pushs i/like/iccecream
+pushs: command not found
+~/temp$ pushd i/like/iccecream
+~/temp/i/like/iccecream ~/temp
+~/temp/i/like/iccecream$ popd
+~/temp
+~/temp$ pwd
+/home/karlavaldez/temp
+~/temp$ pushd i/like
+~/temp/i/like ~/temp
+~/temp/i/like$ pwd
+/home/karlavaldez/temp/i/like
+~/temp/i/like$ pushd iccecream
+~/temp/i/like/iccecream ~/temp/i/like ~/temp
+~/temp/i/like/iccecream$ pwd
+/home/karlavaldez/temp/i/like/iccecream
+~/temp/i/like/iccecream$ popd
+~/temp/i/like ~/temp
+~/temp/i/like$ pwd
+/home/karlavaldez/temp/i/like
+~/temp/i/like$ popd
+~/temp
+# Execersise 9
+~/temp$ nano iamcool.txt
+~/temp$ ls
+  iamcool.txt  stuff
+#Exercise 10
+
+~/temp$ nano neat.txt
+~/temp$ nano awesome.txt
+~/temp$ mkdir something
+~/temp$ cp awesome.txt thefourthfile.txt
+~/temp$ cp awesome.txt something/
+~/temp$ ls
+awesome.txt  i  iamcool.txt  neat.txt  something  stuff  thefourthfile.txt
+~/temp$ cp awesome.txt something/
+
+#Exercise 11 
+karlavaldez@LAPTOP-R7NRPSKT:~$ cd temp
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ mv awesome.txt uncool.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls
+i  iamcool.txt  neat.txt  something  stuff  thefourthfile.txt  uncool.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ mv uncool.txt neat
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls
+i  iamcool.txt  neat  neat.txt  something  stuff  thefourthfile.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ mv iamcool.txt neat.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls
+i  neat  neat.txt  something  stuff  thefourthfile.txt
+
+# Exercise 12
+~/temp$ less ex12.txt
+~/temp$ more ex12.txt
+~/temp$
+# Exercise 13 
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ nano ex13.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ cat ex13.txt
+~/temp$ more ex13.txt
+I am Karla Valdez
+~/temp$ cat ex13.txt
+I am Karla Valdez
+
+# Exercise 14
+
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ rm ex12.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls
+ex13.txt  i  neat  neat.txt  something  stuff  thefourthfile.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls -l
+total 0
+-rw-rw-rw- 1 karlavaldez karlavaldez   18 Mar 24 10:42 ex13.txt
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:45 i
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:57 neat
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:54 neat.txt
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:59 something
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:24 stuff
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:58 thefourthfile.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ rm thefourthfile.txt
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls -l
+total 0
+-rw-rw-rw- 1 karlavaldez karlavaldez   18 Mar 24 10:42 ex13.txt
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:45 i
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:57 neat
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:54 neat.txt
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:59 something
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:24 stuff
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ rm -r i
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ rm -r something
+karlavaldez@LAPTOP-R7NRPSKT:~/temp$ ls -l
+total 0
+-rw-rw-rw- 1 karlavaldez karlavaldez   18 Mar 24 10:42 ex13.txt
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:57 neat
+-rw-rw-rw- 1 karlavaldez karlavaldez    0 Mar 24 08:54 neat.txt
+drwxrwxrwx 1 karlavaldez karlavaldez 4096 Mar 24 08:24 stuff
+
